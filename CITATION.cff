@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "GR-SAFS: Graph-Regularized Stacking with Adaptive Feature Selection"
+authors:
+  - family-names: "[LastName]"
+    given-names: "[FirstName]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.0.0"
+date-released: "2026-XX-XX"
+url: "https://github.com/<YOUR-USERNAME>/GR-SAFS"
+license: MIT
+preferred-citation:
+  type: article
+  title: "GR-SAFS: A Graph-Regularized Stacking Framework with Adaptive Feature Selection for High-Dimensional Prognostic Biomarker Discovery"
+  authors:
+    - family-names: "[LastName]"
+      given-names: "[FirstName]"
+  journal: "Briefings in Bioinformatics"
+  year: 2026
+  doi: "PLACEHOLDER"

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grsafs"
+version = "1.0.0"
+description = "Graph-Regularized Stacking with Adaptive Feature Selection for High-Dimensional Prognostic Biomarker Discovery"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+    {name = "[Author Name]", email = "[email@institution.edu]"}
+]
+keywords = ["bioinformatics", "feature-selection", "survival-analysis", "graph-regularization", "ensemble-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.23,<2.0",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "scikit-survival>=0.22",
+    "lifelines>=0.27",
+    "cvxpy>=1.4",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0", "black", "ruff"]
+docs = ["mkdocs", "mkdocs-material"]
+
+[project.urls]
+Homepage = "https://github.com/<YOUR-USERNAME>/GR-SAFS"
+Issues = "https://github.com/<YOUR-USERNAME>/GR-SAFS/issues"
+Repository = "https://github.com/<YOUR-USERNAME>/GR-SAFS"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["grsafs*"]
+exclude = ["tests*", "scripts*", "notebooks*"]
